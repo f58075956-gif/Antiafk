@@ -16,14 +16,14 @@ local function createFrame(size, position, anchor)
     frame.Size = size
     frame.Position = position
     frame.AnchorPoint = anchor
-    frame.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+    frame.BackgroundColor3 = Color3.fromRGB(85, 107, 47)
     frame.BackgroundTransparency = 0.2
     frame.BorderSizePixel = 0
 
     local gradient = Instance.new("UIGradient", frame)
     gradient.Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(200, 0, 0)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 0, 0)),
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(107, 142, 35)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(60, 80, 20)),
     })
     gradient.Rotation = 45
 
@@ -31,7 +31,7 @@ local function createFrame(size, position, anchor)
     corner.CornerRadius = UDim.new(0, 12)
 
     local stroke = Instance.new("UIStroke", frame)
-    stroke.Color = Color3.fromRGB(255, 100, 100)
+    stroke.Color = Color3.fromRGB(154, 205, 50)
     stroke.Thickness = 2
     stroke.Transparency = 0.3
 
@@ -72,7 +72,7 @@ end
 local titleLabel = makeLabel(counter,
     UDim2.new(0.9, 0, 0.25, 0),
     UDim2.new(0.05, 0, 0.05, 0),
-    "Enchanted Hub - Anti AFK"
+    "ZIX DOM|ANTIAFK"
 )
 local timerLabel = makeLabel(counter,
     UDim2.new(0.45, 0, 0.2, 0),
@@ -95,6 +95,7 @@ icon.Position = UDim2.new(0.55, 0, 0.35, 0)
 icon.Size = UDim2.new(0.4, 0, 0.6, 0)
 icon.BackgroundTransparency = 1
 icon.Image = "rbxassetid://1083501283"
+icon.ImageColor3 = Color3.fromRGB(173, 255, 47)
 icon.BorderSizePixel = 0
 local aspectConstraint = Instance.new("UIAspectRatioConstraint", icon)
 aspectConstraint.AspectRatio = 1
