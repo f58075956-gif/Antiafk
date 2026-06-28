@@ -72,7 +72,7 @@ end
 local titleLabel = makeLabel(counter,
     UDim2.new(0.9, 0, 0.25, 0),
     UDim2.new(0.05, 0, 0.05, 0),
-    "ZIX DOM|ANTIAFK"
+    "CRONOS|ANTIAFK"
 )
 local timerLabel = makeLabel(counter,
     UDim2.new(0.45, 0, 0.2, 0),
